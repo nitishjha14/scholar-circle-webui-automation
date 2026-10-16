@@ -15,7 +15,7 @@ test.describe('Delete post', () => {
     await expect(feedPage.heading).toBeVisible();
   });
 
-  // Path 1: delete straight from the post page shown right after Submit
+  
   test('delete a post right after creating it', { tag: '@smoke' }, async ({ page }) => {
     const postDetailPage = new PostDetailPage(page);
     const feedPage = new FeedPage(page);
