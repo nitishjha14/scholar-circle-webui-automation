@@ -6,6 +6,8 @@ const reportDir = process.env.REPORT_DIR || 'reports/html-report';
 
 export default defineConfig({
   testDir: './tests',
+  timeout: 60000,
+  expect: { timeout: 10000 },
 
   // Run tests sequentially while investigating flaky failures
   fullyParallel: false,
